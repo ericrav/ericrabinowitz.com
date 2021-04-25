@@ -28,6 +28,12 @@ export const Endnotes: React.FC = () => (
         >
           GitHub
         </Link>
+
+        and was last updated
+        {' '}
+        {process.env.VERCEL_GIT_COMMIT_SHA}
+        {process.env.NEXT_PUBLIC_VERCEL_GIT_COMMIT_SHA}
+        {process.env.GIT_COMMIT_SHA}
         .
       </p>
     </Section>
