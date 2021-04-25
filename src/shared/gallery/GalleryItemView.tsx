@@ -23,6 +23,11 @@ const activeStyle = css({
   left: thumbnailSize + thumbnailMargin,
   height: '100%',
   width: `calc(100% - ${(thumbnailSize + thumbnailMargin) * 2}px)`,
+
+  '@media (max-width: 1000px)': {
+    left: 0,
+    width: '100%',
+  },
 });
 
 export const GalleryItemView: React.FC<Props> = ({
@@ -110,6 +115,11 @@ export const GalleryItemView: React.FC<Props> = ({
               height: thumbnailSize,
               borderRadius: 3,
               overflow: 'hidden',
+              '@media (max-width: 1000px)': {
+                top: '100%',
+                left: i * (thumbnailSize + thumbnailMargin),
+                marginTop: thumbnailMargin,
+              },
             },
           ]
       }

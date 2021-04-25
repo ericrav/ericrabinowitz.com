@@ -36,6 +36,21 @@ export const Typography: React.FC = () => (
       a: {
         fontSize: '1.4rem',
       },
+
+      '@media (max-width: 45em)': {
+        h1: {
+          fontSize: '2.5rem',
+        },
+        h2: {
+          fontSize: '2.2rem',
+        },
+        h3: {
+          fontSize: '1.8rem',
+        },
+        'p, a': {
+          fontSize: '1.2rem',
+        },
+      },
     }}
   />
 );

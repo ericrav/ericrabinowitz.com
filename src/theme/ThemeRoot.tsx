@@ -17,6 +17,11 @@ export const ThemeRoot: React.FC = () => (
         li: {
           margin: '1rem 0',
         },
+        '@media (max-width: 45rem)': {
+          body: {
+            paddingTop: '1rem',
+          },
+        },
       }}
     />
   </>
