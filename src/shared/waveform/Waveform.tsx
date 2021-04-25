@@ -1,6 +1,10 @@
 import { WaveformCanvas } from './WaveformCanvas';
 
-export const Waveform: React.FC = ({ children }) => (
+interface Props {
+  frequency: number;
+}
+
+export const Waveform: React.FC<Props> = ({ children, frequency }) => (
   <div
     css={{
       position: 'relative',
@@ -19,6 +23,7 @@ export const Waveform: React.FC = ({ children }) => (
       {children}
     </div>
     <WaveformCanvas
+      frequency={frequency}
       css={{
         position: 'absolute',
         top: 0,

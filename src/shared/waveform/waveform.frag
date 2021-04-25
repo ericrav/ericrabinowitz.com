@@ -1,7 +1,7 @@
 precision highp float;
 
 #define LC vec3(0.19, 0.19, 0.27)
-#define HL vec3( 0.98, 0.95, 0.60 )
+#define HL vec3(0.89, 0.77, 0.28)
 
 uniform vec2 resolution;
 uniform float time;
@@ -66,10 +66,12 @@ void main() {
 
   float ends = 1. - smoothstep( 0.92, 1., pow( abs( st.x ), 0.25 ) );
   float ends2 = 1. - smoothstep( 0.8, 1., abs( st.x ) );
-  float amp = 0.5 * ends2;
+  float edge = 1. - smoothstep( 0.5, 1., abs(st.x));
+  float amp = 0.5 * edge;
   y *= amp;
 
-  vec2 s = resolution / 8.;
+  float pixelSize = 10.;
+  vec2 s = resolution / pixelSize;
   float ix = floor( st.x * s.x + 0.5 ) / s.x;
   float iy = floor( st.y * s.y + 0.5 ) / s.y;
   vec2 ist = vec2( ix, iy );

@@ -4,12 +4,13 @@ import { useWaveformGL } from './useWaveformGL';
 
 interface Props {
   className?: string;
+  frequency: number;
 }
 
-export const WaveformCanvas: React.FC<Props> = ({ className }) => {
+export const WaveformCanvas: React.FC<Props> = ({ className, frequency }) => {
   const ref = useRef<HTMLCanvasElement>(null);
 
-  useWaveformGL(ref);
+  useWaveformGL(ref, frequency);
 
   return (
     <canvas
