@@ -1,10 +1,14 @@
+import { ProjectContent } from '../../ProjectContent';
 import { CtaLink } from '../../theme/components/CtaLink';
 import { Section } from '../../theme/components/Section';
 
-export const Storybooth: React.FC = () => (
+export const Project: React.FC<ProjectContent> = ({
+  title,
+  description,
+}) => (
   <Section>
-    <h3>Storybooth</h3>
+    <h3>{title}</h3>
     <CtaLink href='https://storybooth.us/'>View Website</CtaLink>
-    <p />
+    <p>{description}</p>
   </Section>
 );
