@@ -1,7 +1,7 @@
 precision highp float;
 
 #define LC vec3(0.19, 0.19, 0.27)
-#define HL vec3(0.89, 0.77, 0.28)
+#define HL vec3(0.98, 0.95, 0.60)
 
 uniform vec2 resolution;
 uniform float time;
@@ -55,7 +55,6 @@ float plot(vec2 st, float pct){
 void main() {
   vec2 uv = gl_FragCoord.xy / resolution;
   vec2 st = uv * 2. - 1.;
-  // vec3 color = BG;
 
   float y                = sin( 1. * st.x * 11. + time * 2. );
   if ( freq >= 220. ) y *= sin( 1. * st.x * 22. + time * 2. );
@@ -66,7 +65,7 @@ void main() {
 
   float ends = 1. - smoothstep( 0.92, 1., pow( abs( st.x ), 0.25 ) );
   float ends2 = 1. - smoothstep( 0.8, 1., abs( st.x ) );
-  float edge = 1. - smoothstep( 0.5, 1., abs(st.x));
+  float edge = pow(1. - smoothstep( 0.5, 1., abs(st.x)), 3.);
   float amp = 0.5 * edge;
   y *= amp;
 

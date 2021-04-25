@@ -5,7 +5,7 @@ export const Colors: React.FC = () => (
     styles={{
       body: {
         '--text-color': '#544e63',
-        '--heading-color': '#507368',
+        '--heading-color': '#287D62',
         '--link-color': '#FAF398',
         '--bg-color': '#FAF9EB',
         background: 'var(--bg-color)',
