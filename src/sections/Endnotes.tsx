@@ -2,7 +2,11 @@ import { Waveform } from '../shared/waveform/Waveform';
 import { Link } from '../theme/components/Link';
 import { Section } from '../theme/components/Section';
 
-export const Endnotes: React.FC = () => (
+interface Props {
+  lastUpdated: number;
+}
+
+export const Endnotes: React.FC<Props> = ({ lastUpdated }) => (
   <>
     <Waveform frequency={330}>
       <h2>Endnotes</h2>
@@ -23,17 +27,15 @@ export const Endnotes: React.FC = () => (
         {' '}
         built this website with Next.js and React. The code for this website is on
         {' '}
-        <Link
-          href='https://github.com/ericrav'
-        >
+        <Link href='https://github.com/ericrav/ericrabinowitz.com'>
           GitHub
         </Link>
-
+        {' '}
         and was last updated
         {' '}
-        {process.env.VERCEL_GIT_COMMIT_SHA}
-        {process.env.NEXT_PUBLIC_VERCEL_GIT_COMMIT_SHA}
-        {process.env.GIT_COMMIT_SHA}
+        <Link href='https://github.com/ericrav/ericrabinowitz.com/commits/main'>
+          {new Date(lastUpdated).toDateString()}
+        </Link>
         .
       </p>
     </Section>

@@ -1,8 +1,13 @@
+import { GetStaticProps } from 'next';
 import Head from 'next/head';
 
 import { App } from '../src/App';
 
-export default function Home() {
+interface Props {
+  lastUpdated: number;
+}
+
+export default function Home({ lastUpdated }: Props) {
   return (
     <>
       <Head>
@@ -12,7 +17,17 @@ export default function Home() {
           href='/favicon.png'
         />
       </Head>
-      <App />
+      <App lastUpdated={lastUpdated} />
     </>
   );
 }
+
+export const getStaticProps: GetStaticProps<Props> = async () => {
+  const lastUpdated = Date.now();
+
+  return {
+    props: {
+      lastUpdated,
+    },
+  };
+};

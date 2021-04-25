@@ -31,7 +31,7 @@ export const Typography: React.FC = () => (
 
       p: {
         fontSize: '1.4rem',
-        lineHeight: '1.2',
+        lineHeight: '1.4',
       },
       a: {
         fontSize: '1.4rem',
