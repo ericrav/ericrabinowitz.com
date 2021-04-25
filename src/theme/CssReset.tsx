@@ -33,7 +33,7 @@ export default function CssReset() {
         }
         body {
           margin: 0;
-          line-height: 1;
+          line-height: normal;
         }
         ol, ul {
           list-style: none;

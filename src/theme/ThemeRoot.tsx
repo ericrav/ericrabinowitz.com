@@ -14,6 +14,9 @@ export const ThemeRoot: React.FC = () => (
         body: {
           paddingTop: '8rem',
         },
+        li: {
+          margin: '1rem 0',
+        },
       }}
     />
   </>

@@ -1,4 +1,6 @@
-import { Waveform } from './shared/waveform/Waveform';
+import { Endnotes } from './sections/Endnotes';
+import { Intro } from './sections/Intro';
+import { Work } from './sections/work/Work';
 import { ThemeRoot } from './theme/ThemeRoot';
 import { Container } from './theme/components/Container';
 
@@ -6,9 +8,9 @@ export const App: React.FC = () => (
   <>
     <ThemeRoot />
     <Container>
-      <Waveform>
-        <h1>Eric Rabinowitz</h1>
-      </Waveform>
+      <Intro />
+      <Work />
+      <Endnotes />
     </Container>
   </>
 );

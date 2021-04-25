@@ -6,7 +6,8 @@ export const Colors: React.FC = () => (
       body: {
         '--text-color': '#544e63',
         '--heading-color': '#507368',
-        '--bg-color': '#F2F0D5',
+        '--link-color': '#FAF398',
+        '--bg-color': '#FAF9EB',
         background: 'var(--bg-color)',
         color: 'var(--text-color)',
       },
