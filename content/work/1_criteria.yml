@@ -1,0 +1,11 @@
+title: Criteria
+link:
+  url: https://ccs.bard.edu/museum/exhibitions/629-criteria
+  text: View Exhibition
+gallery:
+  - vimeo: https://player.vimeo.com/video/541333533?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479
+
+description: >
+  Data visualization of artworks from the Marieluise Hessel Collection at CCS Bard
+  and how they have been exhibited together over the years. A component of thesis exhibition by Natasha Matteson.
+  Using machine learning, artworks are assigned 3d coordinates based on exhibition history.

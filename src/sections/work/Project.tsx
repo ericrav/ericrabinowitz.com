@@ -9,13 +9,15 @@ export const Project: React.FC<ProjectContent> = ({
   description,
   gallery,
 }) => (
-  <Section>
+  <>
     {gallery && <Gallery items={gallery} />}
-    <script src='https://player.vimeo.com/api/player.js' />
-    <h3>{title}</h3>
-    {link && (
-      <CtaLink href={link.url}>{link.text}</CtaLink>
-    )}
-    <p>{description}</p>
-  </Section>
+    <Section>
+      <script src='https://player.vimeo.com/api/player.js' />
+      <h3>{title}</h3>
+      {link && (
+        <CtaLink href={link.url}>{link.text}</CtaLink>
+      )}
+      <p>{description}</p>
+    </Section>
+  </>
 );

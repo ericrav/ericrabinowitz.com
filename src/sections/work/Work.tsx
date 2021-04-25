@@ -12,11 +12,8 @@ export const Work: React.FC<Props> = ({ projects }) => (
       <h2>Work</h2>
     </Waveform>
     {projects.map((project, i) => (
-      <>
-        <Project
-          key={project.title}
-          {...project}
-        />
+      <div key={project.title}>
+        <Project {...project} />
         {i !== projects.length - 1 && (
           <p
             css={{
@@ -26,7 +23,7 @@ export const Work: React.FC<Props> = ({ projects }) => (
             ~
           </p>
         )}
-      </>
+      </div>
     ))}
   </>
 );

@@ -2,6 +2,10 @@ title: Storybooth
 link:
   text: View Website
   url: https://storybooth.us/
+gallery:
+  - image: storybooth.jpg
+  - image: storybooth-screen.jpg
+  - image: storybooth-self.jpg
 description: >
   Storybooth is a phone booth in Montgomery, AL providing an inclusive,
   equitable opportunity for sharing, listening, and storytelling.
