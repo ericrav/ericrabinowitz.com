@@ -1,13 +1,11 @@
-title: Screen Links
-link:
-  text: View Website
-  url: https://storybooth.us/
+title: ScreenLinks
+gallery:
+  - vimeo: https://player.vimeo.com/video/541319576?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479
+
 description: >
-  Storybooth is a phone booth in Montgomery, AL providing an inclusive,
-  equitable opportunity for sharing, listening, and storytelling.
-  Participants may use it at any time to tell their story,
-  which is then uploaded to public archive for all to hear.
-  Through the use of transcription and text analysis, a collective
-  narrative picture will emerge offering a deeper understanding of
-  our collective selves—of memory, of “place,” and of the love, pain,
-  and hope that binds people together.
+  ScreenLinks in an experiment to create concert or event visuals that audiences can easily play
+  with from their phone’s web browser and collectively share on a large screen. The project aimed
+  to give audience members a more personal way to connect with and influence a performance by
+  providing controls that could be used at any time. Iterations of this project include a Space
+  Invaders-style game that let players activate concert visuals, a drawing tool for Georgia
+  State’s CMII Opening Day, and a multiplayer game for the Chemistry advertising agency.

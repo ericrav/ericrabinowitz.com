@@ -4,7 +4,7 @@ export const Section: React.FC = ({ children }) => (
       maxWidth: '40rem',
       margin: '4rem auto',
       'ul, p': {
-        margin: '1.5rem',
+        margin: '1.5rem 1.5rem 2rem',
       },
     }}
   >
