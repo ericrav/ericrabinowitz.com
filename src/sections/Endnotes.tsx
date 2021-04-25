@@ -16,20 +16,15 @@ export const Endnotes: React.FC<Props> = ({ lastUpdated }) => (
       <p>
         Typeset in
         {' '}
-        <Link href='https://www.typejockeys.com/font/henriette'>
-          Henriette
-        </Link>
+        <Link href='https://www.typejockeys.com/font/henriette'>Henriette</Link>
         {' '}
         from Typejockeys.
       </p>
       <p>
-        <Link href='#'>Eric Rabinowitz</Link>
+        Built with open-source software from Next.js, React, TypeScript, Emotion,
+        and TWGL. The website source code is on
         {' '}
-        built this website with Next.js and React. The code for this website is on
-        {' '}
-        <Link href='https://github.com/ericrav/ericrabinowitz.com'>
-          GitHub
-        </Link>
+        <Link href='https://github.com/ericrav/ericrabinowitz.com'>GitHub</Link>
         {' '}
         and was last updated
         {' '}
