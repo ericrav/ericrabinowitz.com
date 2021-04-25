@@ -16,6 +16,7 @@ export const WaveformCanvas: React.FC<Props> = ({ className, frequency }) => {
     <canvas
       className={className}
       css={{
+        background: 'var(--bg-color)',
         width: '100%',
         height: '100%',
       }}

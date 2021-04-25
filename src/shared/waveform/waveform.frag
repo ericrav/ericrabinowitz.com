@@ -95,11 +95,15 @@ void main() {
   mid *= r;
 
   float alpha = pct * darkness;
-  vec4 color = vec4( LC, alpha);
+  vec4 color = vec4( LC * alpha, alpha);
 
 
   if (mid > 0.25 && alpha < 0.25) {
-    color = mix(color, vec4( HL, smoothstep(0.25, 1., mid) ), smoothstep(0., 0.75, mid));
+    float a = smoothstep(0., 0.75, mid);
+    float a2 = smoothstep(0., 0.75, mid);
+    vec4 hlColor = vec4(HL * a2, a2);
+
+    color = mix(color, hlColor, a);
   }
 
   gl_FragColor = color;

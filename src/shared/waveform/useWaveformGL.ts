@@ -14,7 +14,7 @@ export const useWaveformGL = (
 ): void => {
   useEffect(() => {
     const canvas = canvasRef.current!;
-    const gl = canvas.getContext('webgl', { antialias: true, premultipliedAlpha: false })!;
+    const gl = canvas.getContext('webgl', { antialias: true, premultipliedAlpha: true })!;
     const programInfo = twgl.createProgramInfo(gl, [vs, fs]);
 
     const bufferInfo = twgl.createBufferInfoFromArrays(gl, arrays);
