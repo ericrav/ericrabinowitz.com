@@ -92,10 +92,16 @@ export const GalleryItemView: React.FC<Props> = ({
     ? css({
       top: `calc(100% - ${thumbnailSize + (active - i - 1) * (thumbnailSize + thumbnailMargin)}px)`,
       left: 0,
+      '@media (max-width: 1000px)': {
+        left: i * (thumbnailSize + thumbnailMargin),
+      },
     })
     : css({
       top: (i - active - 1) * (thumbnailSize + thumbnailMargin),
       left: `calc(100% - ${thumbnailSize}px)`,
+      '@media (max-width: 1000px)': {
+        left: (i - 1) * (thumbnailSize + thumbnailMargin),
+      },
     });
 
   return (
@@ -117,7 +123,6 @@ export const GalleryItemView: React.FC<Props> = ({
               overflow: 'hidden',
               '@media (max-width: 1000px)': {
                 top: '100%',
-                left: i * (thumbnailSize + thumbnailMargin),
                 marginTop: thumbnailMargin,
               },
             },
