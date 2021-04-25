@@ -9,6 +9,7 @@ export const Vimeo: React.FC<Props> = ({ url }) => (
     allow='autoplay; fullscreen; picture-in-picture'
     allowFullScreen
     css={{
+      background: 'rgba(0,0,0,0.67)',
       position: 'absolute',
       left: 0,
       top: 0,

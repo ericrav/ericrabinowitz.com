@@ -1,10 +1,8 @@
 /* eslint-disable react/no-array-index-key */
 import { useState } from 'react';
 
-import { GalleryItem, isImage, isVimeo } from '../../ProjectContent';
-import { GalleryImage } from './GalleryImage';
+import { GalleryItem } from '../../ProjectContent';
 import { GalleryItemView } from './GalleryItemView';
-import { Vimeo } from './Vimeo';
 
 interface Props {
   items: GalleryItem[];
@@ -17,16 +15,12 @@ export const Gallery: React.FC<Props> = ({ items }) => {
     <div
       css={{
         padding: '1rem',
-        maxWidth: '44rem',
+        maxWidth: 1000,
         boxSizing: 'content-box',
         margin: '2em auto 0',
         position: 'relative',
         height: 480,
-        background: 'rgba(0,0,0,0.75)',
-        borderRadius: 4,
-        // overflow: 'hidden',
-        display: 'flex',
-        alignItems: 'center',
+        // background: 'rgba(0,0,0,0.03)',
       }}
     >
       {items.map((item, i) => (
