@@ -3,7 +3,7 @@ import { Link } from '../theme/components/Link';
 import { Section } from '../theme/components/Section';
 
 interface Props {
-  lastUpdated: number;
+  lastUpdated: string;
 }
 
 export const Endnotes: React.FC<Props> = ({ lastUpdated }) => (
@@ -29,7 +29,7 @@ export const Endnotes: React.FC<Props> = ({ lastUpdated }) => (
         and was last updated
         {' '}
         <Link href='https://github.com/ericrav/ericrabinowitz.com/commits/main'>
-          {new Date(lastUpdated).toDateString()}
+          {lastUpdated}
         </Link>
         .
       </p>

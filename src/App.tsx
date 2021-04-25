@@ -5,7 +5,7 @@ import { ThemeRoot } from './theme/ThemeRoot';
 import { Container } from './theme/components/Container';
 
 interface Props {
-  lastUpdated: number;
+  lastUpdated: string;
 }
 
 export const App: React.FC<Props> = ({ lastUpdated }) => (

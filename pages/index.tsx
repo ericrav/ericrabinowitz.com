@@ -4,7 +4,7 @@ import Head from 'next/head';
 import { App } from '../src/App';
 
 interface Props {
-  lastUpdated: number;
+  lastUpdated: string;
 }
 
 export default function Home({ lastUpdated }: Props) {
@@ -23,7 +23,7 @@ export default function Home({ lastUpdated }: Props) {
 }
 
 export const getStaticProps: GetStaticProps<Props> = async () => {
-  const lastUpdated = Date.now();
+  const lastUpdated = new Intl.DateTimeFormat('en-US', { dateStyle: 'long' }).format(new Date());
 
   return {
     props: {
