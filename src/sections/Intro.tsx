@@ -10,7 +10,8 @@ export const Intro: React.FC = () => (
 
     <Section>
       <p>
-        ~ Creative developer based in New York ~ From Atlanta ~ Georgia Tech graduate ~
+        Creative developer based in New York, currently exploring how web technology can allow
+        creator and audience to interact and collaborate.
       </p>
     </Section>
     <Section>
