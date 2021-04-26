@@ -7,15 +7,7 @@ interface Props {
 }
 
 export const GalleryImage: React.FC<Props> = ({ src }) => (
-  <div
-    css={{
-      // position: 'absolute',
-      // height: '100%',
-      // width: '100%',
-      // left: 0,
-      // top: 0,
-    }}
-  >
+  <div>
     <Image
       src={`/project-images/${src}`}
       layout='fill'

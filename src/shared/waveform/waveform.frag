@@ -1,6 +1,6 @@
 precision highp float;
 
-#define LC vec3(0.19, 0.19, 0.27)
+#define LC vec3(0.475, 0.475, 0.675)
 #define HL vec3(0.98, 0.95, 0.60)
 
 uniform vec2 resolution;

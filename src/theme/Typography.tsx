@@ -15,7 +15,7 @@ export const Typography: React.FC = () => (
 
       'h1, h2': {
         color: 'var(--heading-color)',
-        textShadow: '-1px 2px 4px rgba(80, 115, 104, 0.2)',
+        textShadow: '-1px 2px 2px rgba(80, 115, 104, 0.1)',
       },
 
       h1: {

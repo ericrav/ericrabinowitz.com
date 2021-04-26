@@ -19,7 +19,7 @@ export const Gallery: React.FC<Props> = ({ items }) => {
         boxSizing: 'content-box',
         margin: '2em auto 0',
         position: 'relative',
-        height: 480,
+        height: 630,
         '@media (max-width: 1000px)': {
           marginBottom: 88,
           height: 320,

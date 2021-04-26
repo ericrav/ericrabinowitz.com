@@ -9,7 +9,9 @@ export const Intro: React.FC = () => (
     </Waveform>
 
     <Section>
-      <p>NYC-based creative developer</p>
+      <p>
+        ~ Creative developer based in New York ~ From Atlanta ~ Georgia Tech graduate ~
+      </p>
     </Section>
     <Section>
       <h3>Contact</h3>
