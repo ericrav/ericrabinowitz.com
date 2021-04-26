@@ -22,7 +22,7 @@ export default function App({ Component, pageProps }: AppProps) {
         />
         <meta
           name='og:description'
-          content=''
+          content='Portfolio of creative developer'
         />
         <meta
           name='twitter:card'
@@ -30,15 +30,15 @@ export default function App({ Component, pageProps }: AppProps) {
         />
         <meta
           property='og:image'
-          content=''
+          content='/share.png'
         />
         <meta
           property='og:image:width'
-          content='639'
+          content='2132'
         />
         <meta
           property='og:image:height'
-          content='639'
+          content='990'
         />
         {typekit}
       </Head>
