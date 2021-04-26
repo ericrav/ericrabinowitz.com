@@ -11,10 +11,9 @@ export const GalleryImage: React.FC<Props> = ({ src }) => (
     <Image
       src={`/project-images/${src}`}
       layout='fill'
-      // width={width}
-      // height={height}
       css={{
-        objectFit: 'cover',
+        objectFit: 'contain',
+        background: 'rgba(0,0,0,0.2)',
       }}
     />
   </div>
